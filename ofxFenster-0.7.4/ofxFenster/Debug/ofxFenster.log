@@ -1,0 +1,25 @@
+﻿Build started 9/14/2013 5:04:32 PM.
+     1>Project "E:\Codigo\Visual3d\Src\ofxFenster-0.7.4\ofxFenster\ofxFenster.vcxproj" on node 2 (Build target(s)).
+     1>Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"E:\Codigo\Visual3d\bin\ofxFenster.lib" libghost_debug.lib /LIBPATH:"E:\Codigo\Visual3d\Src\ofxFenster-0.7.4\ofxFenster\\..\libs\ghost\lib\win_vs" /NOLOGO Debug\ofxDisplay.obj
+         Debug\ofxDisplayManager.obj
+         Debug\ofxFenster.obj
+         Debug\ofxFensterCanvas.obj
+         Debug\ofxFensterManager.obj
+         ofxFenster.vcxproj -> E:\Codigo\Visual3d\bin\ofxFenster.lib
+       PostBuildEvent:
+         xcopy /e /i /y "E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\*.dll" "E:\Codigo\Visual3d\\Bin\ofxFenster\Win32\Debug\"
+         :VCEnd
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\Assimp32.dll
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\fmodex.dll
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\fmodexL.dll
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\FreeImage.dll
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\FreeType-6.dll
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\glut32.dll
+         E:\Codigo\Visual3d\\Src\of_v0073_vs2010_release\export\vs2010\Zlib.dll
+         7 File(s) copied
+     1>Done Building Project "E:\Codigo\Visual3d\Src\ofxFenster-0.7.4\ofxFenster\ofxFenster.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.15
