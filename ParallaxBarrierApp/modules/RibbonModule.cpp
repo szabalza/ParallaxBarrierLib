@@ -352,7 +352,7 @@ void RibbonModule::drawLeftHandPoints()
 
 	//draw left hand
 	ofSetColor(getPointerLeftHandColor());
-	leftHandImage.draw(app->leftHandPosition.x - 0.007, app->leftHandPosition.y - 0.007, 0, 0.014, 0.014);
+	leftHandImage.draw(app->leftHandPosition.x - 0.010, app->leftHandPosition.y - 0.010, 0, 0.020, 0.020);
 }
 
 void RibbonModule::drawRightHandPoints()
@@ -406,7 +406,7 @@ void RibbonModule::drawRightHandPoints()
 
 	//draw right hand
 	ofSetColor(getPointerRightHandColor());
-	rightHandImage.draw(app->rightHandPosition.x - 0.007, app->rightHandPosition.y - 0.007, 0, 0.014, 0.014);
+	rightHandImage.draw(app->rightHandPosition.x - 0.010, app->rightHandPosition.y - 0.010, 0, 0.020, 0.020);
 }
 
 void RibbonModule::keyReleased(int key)

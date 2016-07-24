@@ -46,5 +46,6 @@ private:
 
 	AppModule* activeModule;
 	vector<AppModule*> modules;
+	int activeModuleIndex;
 };
 

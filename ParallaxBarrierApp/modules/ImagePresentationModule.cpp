@@ -93,3 +93,13 @@ void ImagePresentationModule::keyReleased(int key)
 	}
 }
 
+void ImagePresentationModule::mouseReleased(int x, int y, int button)
+{
+	if(button == 2)
+	{
+		selectedImage = (selectedImage + 1) % imagesLeft.size();
+		activeImageLeft = imagesLeft[selectedImage];
+		activeImageRight = imagesRight[selectedImage];
+	}
+};
+

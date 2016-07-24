@@ -30,7 +30,7 @@ void testParallaxBarrierApp::setupApp()
 	modules.push_back(new SceneModule(this));
 	modules.push_back(new ImagePresentationModule(this));
 	modules.push_back(new RibbonModule(this));
-	modules.push_back(new TargetsModule(this));
+	//modules.push_back(new TargetsModule(this));
 	modules.push_back(new VideoModule(this));
 
 	//setup modules
@@ -39,6 +39,7 @@ void testParallaxBarrierApp::setupApp()
 		modules[i]->setup();
 	}
 
+	activeModuleIndex = 0;
 	activeModule = modules[0];
 	activeModule->moduleOn();
 }
@@ -149,6 +150,7 @@ void testParallaxBarrierApp::keyReleased(int key)
 	if(key >= '1' && key <= '9' && key - '1' < modules.size())
 	{
 		activeModule->moduleOff();
+		activeModuleIndex = key - '1';
 		activeModule = modules[key - '1'];
 		activeModule->moduleOn();
 	}
@@ -177,6 +179,12 @@ void testParallaxBarrierApp::mousePressed(int x, int y, int button)
 //--------------------------------------------------------------
 void testParallaxBarrierApp::mouseReleased(int x, int y, int button)
 {
+	if (button == 0) {
+		activeModuleIndex = (activeModuleIndex + 1)%modules.size();
+		activeModule->moduleOff();
+		activeModule = modules[activeModuleIndex];
+		activeModule->moduleOn();
+	}
 	activeModule->mouseReleased(x, y, button);
 }
 

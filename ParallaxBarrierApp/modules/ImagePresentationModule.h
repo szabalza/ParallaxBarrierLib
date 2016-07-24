@@ -13,6 +13,7 @@ public:
 	void drawRight();
 
 	void keyReleased(int key);
+	virtual void mouseReleased(int x, int y, int button);
 
 private:
 	ofImage* activeImageLeft;
